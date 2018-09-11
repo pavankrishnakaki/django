@@ -1,0 +1,9 @@
+{% if questions %}
+    <ul>
+        {% for question in questions %}
+        <li>{{ question.id }} - {{ question.question_text }} - {{ question.pub_date }} - {{ question.is_active }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No Questions are available</p>
+{% endif %}
